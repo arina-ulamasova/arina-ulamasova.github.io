@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Russo+One&display=swap" rel="stylesheet">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=67124247-eb91-47b4-87ba-0418f8af8d30&lang=ru_RU" type="text/javascript"></script>
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		/* Устанавливаем высоту карты */
+		#map {
+		  height: 400px;
+		}
+	  </style>
+	<header class="header">
+		<div class="container ">
+				<a href="{{ url_for('index') }}"><img class="logo" src="{{ url_for('static', filename='imgs/full_logo.png') }}" alt=""></a>
+			<nav class="nav menu">
+				<a href="solutions.html" class="nav-item">Решения</a>
+				<a href="#" class="nav-item">Отзывы</a>
+				<a href="#" class="nav-item">Новости</a>
+				<a href="about.html" class="nav-item">О нас</a>
+				<a href="gpt.html" class="nav-item">GPT</a>
+			</nav>
+
+			<div class="burger-menu-btn">
+				<div class="b1"></div>
+				<div class="b2"></div>
+				<div class="b3"></div>
+			</div>
+			<div class="burger-menu none">
+				<div class="crest"></div>
+				<a href="solutions.html" class="burger-item">Решения</a>
+				<a href="#" class="burger-item">Отзывы</a>
+				<a href="#" class="burger-item">Новости</a>
+				<a href="about.html" class="burger-item">О нас</a>
+			</div>
+		</div>
+	</header>
+	<section class="main">
+		<div class="container main-section">
+			<div class="r">
+				<h1>ProjectEye объединяет все ваши задачи, партнеров по команде и инструменты</h1>
+				<p>Автоматизацируй мониторинг и управление командой с помощью ProjectEye</p>
+			</div>
+			<div class="l"><img src="static/imgs/main.png" alt=""></div>
+		</div>
+	</section>
+	<section class="team">
+		<div class="container team-section">
+			<div class="l"><img src="static/imgs/team.png" alt=""></div>
+			<div class="r">
+				<h2>Мониторинг проекта в режиме реального времени</h2>
+				<p>Смотрите статус проекта в режиме реального времени и выявляйте узкие места до того, как они станут проблемой.</p>
+				<p>С ProjectEye вы сможете легко отслеживать ход реализации проекта, выявлять узкие места и эффективно взаимодействовать с заинтересованными сторонами. </p>
+			</div>
+		</div>
+	</section>
+	<section class="presentation">
+		<div class="container presentation-section">
+			<div class="row">
+				<div class="l"><img src="static/imgs/presentation.png" alt=""></div>
+				<div class="r">
+					<h2>Автоматизированное управление задачами</h2>
+					<p>Автоматизируйте рутинные задачи, включая планирование, выставление счетов и многое другое.</p>
+				</div>
+			</div>
+			<div class="row">
+				<p>Наше программное обеспечение обеспечивает отображение статуса проекта в режиме реального времени, предоставляет индивидуальные отчеты и автоматизирует рутинные задачи, помогая вашей команде работать более эффективно. Мы позаботимся о вас от начала проекта до его завершения.</p>
+			</div>
+
+		</div>
+
+		<div class="container mt-5">
+			<div class="row justify-content-center">
+			  <div class="col-md-8">
+				<!-- Контейнер для карты -->
+				<div id="map"></div>
+			  </div>
+			</div>
+		  </div>
+
+		  <!-- Скрипт инициализации карты -->
+		  <script>
+			ymaps.ready(init);
+			function init() {
+			  var myMap = new ymaps.Map("map", {
+				center: [55.755844, 49.232358], // Координаты центра карты (Казань)
+				zoom: 16 // Масштаб карты
+			  });
+
+			  var myPlacemark = new ymaps.Placemark([55.755844, 49.232358], {
+				hintContent: "улица Юлиуса Фучика, 72" // Текст подсказки при наведении на метку
+			  });
+
+			  myMap.geoObjects.add(myPlacemark);
+			}
+		  </script>
+	</section>
+	<footer class="footer">
+		<div class="container footer-section">
+			<div class="row">
+				<div class="c">
+					<h3>ProjectEye</h3>
+					<p>Ваш надежный партнёр в мире технологий. Мы предоставляем высококачественные решения и консультации.</p>
+				</div>
+				<div class="c big">
+					<div class="t">Контактная информация:</div>
+					<div class="t">Адрес: улица Сафиуллина 30, Казань, Россия</div>
+					<div class="t">Телефон: +7 (800) 700-83-23</div>
+					<div class="t">Email: info@projecteye.ru</div>
+				</div>
+				<div class="c n">
+					<a class="t" href="solutions.html">Наши решения</a>
+					<a class="t" href="#">Отзывы</a>
+					<a class="t" href="#">Новости</a>
+					<a class="t" href="about.html">О нас</a>
+				</div>
+				<div class="c small">
+					<div class="t">Контактная информация:</div>
+					<div class="t">Адрес: улица Сафиуллина 30, Казань, Россия</div>
+					<div class="t">Телефон: +7 (800) 700-83-23</div>
+					<div class="t">Email: info@projecteye.ru</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="pravo">© 2023 projecteye.ru Все права защищены.</div>
+				<div class="soc-links">
+					<a href="#" class="link"><img src="/imgs/vk.png" alt=""></a>
+					<a href="#" class="link"><img src="/imgs/tg.png" alt=""></a>
+					<a href="#" class="link"><img src="/imgs/wp.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+
