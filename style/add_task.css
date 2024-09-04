@@ -1,0 +1,31 @@
+/* стили для добавления задачи */
+.new-task {
+    position: relative;
+    width: 100%;
+    height: 133px;
+    top: 54px;
+    padding-left: 123px;
+    background: #C6C1BB;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+}
+
+.new-task h1 {
+    margin: 0 0 10px;
+}
+
+.new-task input[type="text"] {
+    width: 40%;
+    height: 33px;
+    background: #EEF0F0;
+    border: 1px solid #000000;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 10px; 
+}
+
+/* для кнопки Добавить */
+#add-task {
+    position: absolute;
+    left: 1323px;
+    top: 83px;
+}
