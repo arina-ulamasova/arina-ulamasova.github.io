@@ -1,12 +1,8 @@
-[Open](https://arina-ulamasova.github.io/)
-
+Ссылка на страничку:
+https://arina-ulamasova.github.io/
 
 css-файлы для отдельных компонент:
-
 общий стиль для всего документа - style.css
 стиль для добавления задачи - add_task.css
 для области с задачами - main_task.css
 для кнопки Очистить - del_but.css
-
-Сссылка на макет в фигме:
-https://www.figma.com/design/JTPqzlxw64TnSsvIGSopCU/Untitled?node-id=0-1&t=C9qEni7FVImX0JUj-1
