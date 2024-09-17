@@ -1,0 +1,53 @@
+/* Стили для области с задачами */
+main {
+    position: relative;
+    width: 100%;
+    padding-inline: 108px;
+    height: 256px;
+    top: 52px;
+    background: #C6C1BB;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+section {
+    width: 350px; 
+    height: 100%; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* отступы столбцов */
+/* .backlog {
+    left: 53px;
+}
+
+.in-progress {
+    left: 321px;
+}
+
+.done {
+    left: 667px;
+}
+
+.trash {
+    left: 936px;
+} */
+
+.task-list__title {
+    margin: 0 0 10px;
+}
+
+.task-list__body {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    font-size: 24px;
+    color: #000000;
+}
