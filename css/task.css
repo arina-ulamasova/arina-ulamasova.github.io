@@ -1,0 +1,17 @@
+.tasks__item {
+    position: relative;
+    padding: 20px 15px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.tasks__item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    border-radius: 10px 0 0 10px;
+    content: "";
+}
+

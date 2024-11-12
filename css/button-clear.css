@@ -1,0 +1,22 @@
+.tasks-item__button--clear {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #051F5D;
+    color: #B6C0E3;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tasks-item__button--clear:hover {
+    color: black;
+    background-color: gray;
+}
+
+.tasks-item__button--clear:disabled {
+    color: black;
+    background-color: gray;
+    cursor: not-allowed;
+}

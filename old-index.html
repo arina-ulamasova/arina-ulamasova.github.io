@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акберов Артур Рашитович</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/task.css">
+    <link rel="stylesheet" href="css/task-area.css">
+    <link rel="stylesheet" href="css/new-task.css">
+    <link rel="stylesheet" href="css/button-clear.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <header>
+        <h1>Список задач</h1>
+    </header>
+    
+    <main>
+        <section class="new-task">
+            <h2 class="new-task__title">Новая задача</h2>
+            
+            <input class="new-task__input" type="text" placeholder="Название задачи...">
+            <button class="new-task__button">+ Добавить</button>
+        </section>
+
+        <section class="container">
+            <section class="tasks">
+                <h3 class="tasks__title tasks__title--black">Бэклог</h3>
+
+                <ul class="tasks__list">
+                    <li class="tasks__item tasks__item--black">Выучить JS</li>
+                    <li class="tasks__item tasks__item--black">Выучить React</li>
+                    <li class="tasks__item tasks__item--black">Сделать домашку</li>
+                </ul>
+            </section>
+    
+            <section class="tasks"> 
+                <h3 class="tasks__title tasks__title--royalblue">В процессе</h3>
+    
+                <ul class="tasks__list">
+                    <li class="tasks__item tasks__item--royalblue">Выпить смузи</li>
+                    <li class="tasks__item tasks__item--royalblue">Попить воды</li>
+                </ul>
+            </section>
+    
+            <section class="tasks">
+                <h3 class="tasks__title tasks__title--green">Готово</h3>
+    
+                <ul class="tasks__list">
+                    <li class="tasks__item tasks__item--green">Позвонить маме</li>
+                    <li class="tasks__item tasks__item--green">Погладить кота</li>
+                </ul>
+            </section>
+    
+            <section class="tasks">
+                <h3 class="tasks__title tasks__title--brown">Корзина</h3>
+    
+                <ul class="tasks__list">
+                    <li class="tasks__item tasks__item--brown">Сходить погулять</li>
+                    <li class="tasks__item tasks__item--brown">Прочитать Войну и Мир</li>
+                </ul>
+    
+                <button class="tasks-item__button--clear">x Очистить</button>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

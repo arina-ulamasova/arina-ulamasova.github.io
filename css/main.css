@@ -1,0 +1,21 @@
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #c7c7c7;
+    color: black;
+}
+
+header {
+    background-color: #051F5D;
+    color: #B6C0E3;
+    height: 60px;
+    padding: 10px;
+}
+
+main {
+    margin: 40px 20px 40px 40px;
+}
+
+h1 {
+    margin: 0 40px !important;
+    width: fit-content;
+}
